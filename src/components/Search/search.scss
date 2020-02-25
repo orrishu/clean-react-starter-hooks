@@ -1,0 +1,10 @@
+@import '~common/style/_theme.scss';
+.test {
+  //background-color: tomato;
+  background-color: $purple-light;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
