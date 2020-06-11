@@ -1,20 +1,20 @@
 # clean-react-starter-hooks
 a clean starter for react application, with router, translations, css-modules and api connection.
-built upon https://github.com/orrishu/clean-react-starter with hooks and function compoennts instead of classes
+built upon https://github.com/orrishu/clean-react-starter with hooks and function components instead of classes
 
 using webpack-dev server for development with hot-reloading enabled.
 
-updated 25/02/2020 for versions:
+updated 11/06/2020 for versions:
 ------------
 ```
-react 16.12.0; 
-react-router 5.1.2; 
+react 16.13.1; 
+react-router 5.2.0; 
 babel-plugin-react-css-modules 5.2.6; 
 
 ```
 prerequisites
 ------------
-node >= 12.6.0
+node >= 12.6.0 (currently running on node 14.4.0)
 
 development
 -----------
