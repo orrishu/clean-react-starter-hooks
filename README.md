@@ -4,10 +4,10 @@ built upon https://github.com/orrishu/clean-react-starter with hooks and functio
 
 using webpack-dev server for development with hot-reloading enabled.
 
-updated 11/06/2020 for versions:
+updated 25/01/2021 for versions:
 ------------
 ```
-react 16.13.1; 
+react 16.14.0; 
 react-router 5.2.0; 
 babel-plugin-react-css-modules 5.2.6; 
 
