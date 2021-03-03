@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dashboard -- npm run dev",
-    "dev": "cross-env NODE_ENV=development API_BASEURL=http://iis-test:8085/Data/api webpack serve",
-    "rebuild": "cross-env NODE_ENV=production API_BASEURL=http://iis-test:8085/Data/api ASSET_PATH=/ webpack --progress",
+    "dev": "cross-env NODE_ENV=development API_BASEURL=https://jsonplaceholder.typicode.com webpack serve",
+    "rebuild": "cross-env NODE_ENV=production API_BASEURL=https://jsonplaceholder.typicode.com ASSET_PATH=/ webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -42,6 +42,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
     "webpack-dashboard": "^3.3.1",

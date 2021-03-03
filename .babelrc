@@ -7,10 +7,12 @@
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
     ["@babel/plugin-proposal-class-properties", { "loose": true }],
     ["react-hot-loader/babel"],
-    ["react-css-modules", {
-      "filetypes": {
-        ".scss": { "syntax": "postcss-scss" }
-      } 
-    }],
+    ["@dr.pogodin/babel-plugin-react-css-modules", {
+		"webpackHotModuleReloading": true,
+		"autoResolveMultipleImports": true,
+		"filetypes": {
+			".scss": { "syntax": "postcss-scss" }
+		},
+	}],
   ]
 }
