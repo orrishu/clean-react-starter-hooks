@@ -8,7 +8,7 @@ using webpack-dev server for development with hot-reloading enabled.
 react 17.0.1;  
 react-router 5.2.0;  
 ~~babel-plugin-react-css-modules~~  
-changed babel-plugin-react-css-modules to **@dr.pogodin/babel-plugin-react-css-modules**, version 6.0.10.  
+changed babel-plugin-react-css-modules to **[@dr.pogodin/babel-plugin-react-css-modules](https://github.com/birdofpreyru/babel-plugin-react-css-modules)**, version 6.0.10.  
 this is due to webpack 5 upgrade that caused problems with the hash of cssmodules:   
 css-loader hash was different than the one created by babel-plugin-react-css-modules.  
 (babel-plugin-react-css-modules => converts styleName to class with module namespaces;   
