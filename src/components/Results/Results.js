@@ -13,7 +13,7 @@ const Results = () => {
   useEffect(() => {
     console.log('results component')
     //test:
-    apiFetch('Search/AutoComplete?query=ירושלים').then(res => {
+    apiFetch('posts').then(res => {
       console.log(res)
       //setResults(res)
       dispatch({type: 'SET_RESULTS', payload: res})
@@ -38,8 +38,9 @@ const Results = () => {
           {state.results.map((item, index) => {
             return <li key={index} style={{'margin': '10px'}}>
               <span styleName="data-span" style={{'width': '50px'}}>{item.id}#</span>
-              <span styleName="data-span">{item.name}</span>
-              <span styleName="data-span">{item.resType}</span>
+              <span styleName="data-span" style={{'width': '50px'}}>{item.userId}#</span>
+              <span styleName="data-span">{item.title}</span>
+              <span styleName="data-span">{item.body}</span>
 
             </li>
           })}
