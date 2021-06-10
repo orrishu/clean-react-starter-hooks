@@ -4,8 +4,8 @@ built upon https://github.com/orrishu/clean-react-starter with hooks and functio
 
 using webpack-dev server for development with hot-reloading enabled.
 
-## updated 03/03/2021 for versions:
-react 17.0.1;  
+## updated 10/06/2021 for versions:
+react 17.0.2;  
 react-router 5.2.0;  
 ~~babel-plugin-react-css-modules~~  
 changed babel-plugin-react-css-modules to **[@dr.pogodin/babel-plugin-react-css-modules](https://github.com/birdofpreyru/babel-plugin-react-css-modules)**, version 6.0.10.  
@@ -14,7 +14,7 @@ css-loader hash was different than the one created by babel-plugin-react-css-mod
 (babel-plugin-react-css-modules => converts styleName to class with module namespaces;   
 css-loader creates the css file.)  
 
-### upgraded to webpack 5 (5.24.2, 03/03/2021)
+### upgraded to webpack 5 (5.35.0, 10/06/2021)
 I suffered some unpleasant issues with cssmodules.  
 see above for @dr.pogodin plugin that fixed the issue.
 
@@ -23,7 +23,7 @@ I used it for IE11 support. Can be added if needed.
 
 prerequisites
 ------------
-node >= 12.6.0 (currently running on node 14.4.0)
+node >= 12.6.0 (currently running on node 16.3.0)
 
 development
 -----------
