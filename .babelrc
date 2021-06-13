@@ -5,7 +5,7 @@
   ],
   "plugins": [
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
-    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    ["@babel/plugin-proposal-class-properties"],
     ["react-hot-loader/babel"],
     ["@dr.pogodin/babel-plugin-react-css-modules", {
 		"webpackHotModuleReloading": true,
