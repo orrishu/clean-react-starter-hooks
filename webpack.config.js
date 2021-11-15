@@ -90,6 +90,9 @@ module.exports = {
               hmr: isDevelopmentServer
             }*/
           },
+          /*{
+            loader: 'style-loader'  //can use that instead of MiniCssExtractPlugin for dev, will output css to <head> tag instead of a file
+          },*/
           {
             loader: 'css-loader',
             options: {
@@ -103,7 +106,7 @@ module.exports = {
             }
           },
           {
-            loader: 'postcss-loader',
+            loader: 'postcss-loader', //minifies the css for the development build
             options: {
               postcssOptions: {
                 //ident: 'postcss',
@@ -115,7 +118,7 @@ module.exports = {
               }
             }
           },
-          'sass-loader'
+          'sass-loader'   //processes scss files
         ]
       }, {
         test: /\.css$/,
@@ -139,10 +142,6 @@ module.exports = {
             }
           }
         }]
-      }, {
-        test: /\.json$/,
-        //loaders: ['json']
-        use: ['json-loader']
       },
       {
         test: /\.jsx?$/,

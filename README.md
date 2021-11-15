@@ -21,6 +21,11 @@ see above for @dr.pogodin plugin that fixed the issue.
 ### removed @babel/polyfill (03/03/2021)
 I used it for IE11 support. Can be added if needed.
 
+### notes about css:
+On dev mode, style-loader can replace MiniCssExtractPlugin to allow style tags in head, instead of css file.  
+**Important:** css-loader version must match @dr.pogodin/babel-plugin-react-css-modules fork.  
+It is possible that after npm install or npm update, need to update to @latest both packages so css will work.  
+
 prerequisites
 ------------
 node >= 12.6.0 (currently running on node 16.3.0)
