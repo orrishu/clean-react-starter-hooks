@@ -45,6 +45,7 @@ i18n
           AppTitle: 'אתר חדש',
           search: 'חיפוש',
           results: 'תוצאות',
+          results_sort: 'תוצאות (למיון)',
           test: 'טסט'
         },
         namespace2: {

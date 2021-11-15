@@ -30,7 +30,7 @@ module.exports = {
     hot: true,
     port: process.env.PORT || '3001',
     historyApiFallback: true,
-    disableHostCheck: true
+    //disableHostCheck: true
   },
   context: path.resolve(__dirname, 'src'),
   devtool: getSourceMap(),

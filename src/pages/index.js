@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Topbar from 'app/components/Topbar'
 import SearchPage from 'pages/search'
 import ResultsPage from 'pages/results'
@@ -11,20 +11,18 @@ class Pages extends React.Component {
     return (
       <section>
         <Topbar />
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/search" />
+        <Routes>
+          <Route path="/" render={() => <Navigate to="search" />} >
           </Route>
-          <Route path="/search">
-            <SearchPage />
+          <Route path="search" element={<SearchPage />}>           
           </Route>
-          <Route path="/results/:query/:sort?">
-            <ResultsPage />
+          <Route path="results/:query" element={<ResultsPage />}>
           </Route>
-          <Route>
-            <NotFound404 />
+          <Route path="results/:query/:sort" element={<ResultsPage />}>
           </Route>
-        </Switch>
+          <Route path='*' element={<NotFound404 />}>          
+          </Route>
+        </Routes>
       </section>
     )
   }
