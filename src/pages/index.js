@@ -12,7 +12,7 @@ class Pages extends React.Component {
       <section>
         <Topbar />
         <Routes>
-          <Route path="/" render={() => <Navigate to="search" />} >
+          <Route path="/" element={<Navigate replace to="search" />} >
           </Route>
           <Route path="search" element={<SearchPage />}>           
           </Route>

@@ -7,7 +7,7 @@ const Search = () => {
   console.log('search component', `${process.env.API_BASEURL}`)  
   const { t } = useTranslation('nav')
   return (
-    <React.Fragment>
+    <>
       <div style={{marginTop: '50px'}} styleName="test">
         Search - Component      
       </div>
@@ -15,7 +15,7 @@ const Search = () => {
       <div styleName="test">
         {t('search')}
       </div>
-    </React.Fragment>
+    </>
   )
 
 }
